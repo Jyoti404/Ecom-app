@@ -45,3 +45,13 @@ Run the app:
 
 bash
 npx expo start
+
+## Screenshots
+
+![screenshot1](./screenshots/g.jpg)
+
+![screenshot2](./screenshots/h.jpg)
+
+![screenshot3](./screenshots/i.jpg)
+
+![screenshot4](./screenshots/j.jpg)
