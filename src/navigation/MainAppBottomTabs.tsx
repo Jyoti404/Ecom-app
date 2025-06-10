@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/home/HomeScreen";
 import CartScreen from "../screens/cart/CartScreen";
 import ProfileScreen from "../screens/profile/ProfileScreen";
-import WishlistScreen from "../screens/wishlist/WishlistScreen"; 
+// import WishlistScreen from "../screens/wishlist/WishlistScreen"; 
 import { colors } from "../styles/colors";
 import { s, vs } from "react-native-size-matters";
 import { Ionicons } from "@expo/vector-icons";
@@ -36,7 +36,7 @@ const MainAppBottomTabs = () => {
         }}
       />
       
-      <Tab.Screen 
+      {/* <Tab.Screen 
         name="Wishlist" 
         component={WishlistScreen}
         options={{
@@ -45,7 +45,7 @@ const MainAppBottomTabs = () => {
           ),
           title: "WISHLIST"
         }}
-      />
+      /> */}
       
       <Tab.Screen 
         name="Cart" 
