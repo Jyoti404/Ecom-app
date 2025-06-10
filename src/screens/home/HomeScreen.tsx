@@ -8,7 +8,6 @@ import ProductCard from "../../components/cards/ProductCard";
 import { useDispatch } from "react-redux";
 import { addItemToCart } from "../../store/reducers/cartSlice";
 import { getProductsData } from "../../config/dataServices";
-import { addItemToWishlist } from "../../store/reducers/wishlistSlice";
 import { Ionicons } from "@expo/vector-icons"; // For the chatbot icon
 import { colors } from "../../styles/colors";
 
@@ -39,7 +38,6 @@ const HomeScreen = ({ navigation }) => {
             price={item.price}
             title={item.title}
             onAddCartPress={() => { dispatch(addItemToCart(item)) }}
-            onWishlistPress={() => { dispatch(addItemToWishlist(item)) }}
           />
         )}
         contentContainerStyle={{ paddingHorizontal: s(10), paddingBottom: vs(70) }} // Added paddingBottom to avoid overlap

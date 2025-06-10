@@ -36,16 +36,6 @@ const MainAppBottomTabs = () => {
         }}
       />
       
-      {/* <Tab.Screen 
-        name="Wishlist" 
-        component={WishlistScreen}
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="heart" color={color} size={size} />
-          ),
-          title: "WISHLIST"
-        }}
-      /> */}
       
       <Tab.Screen 
         name="Cart" 
