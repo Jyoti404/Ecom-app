@@ -50,8 +50,8 @@ npx expo start
 
 
 
-![screenshot4](./screenshots/p7.png)
-![screenshot4](./screenshots/p8.png)
+![screenshot4](./screenshots/p7.jpeg)
+![screenshot4](./screenshots/p8.jpeg)
 ![screenshot3](./screenshots/i.jpg)
 ![screenshot2](./screenshots/h.jpg)
 
