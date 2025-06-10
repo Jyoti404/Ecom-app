@@ -4,13 +4,17 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/home/HomeScreen";
 import CartScreen from "../screens/cart/CartScreen";
 import ProfileScreen from "../screens/profile/ProfileScreen";
+import WishlistScreen from "../screens/wishlist/WishlistScreen"; 
 import { colors } from "../styles/colors";
 import { s, vs } from "react-native-size-matters";
 import { Ionicons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
+
 const Tab = createBottomTabNavigator();
+
 const MainAppBottomTabs = () => {
-  const {t}=useTranslation()
+  const { t } = useTranslation();
+  
   return (
     <Tab.Navigator
       screenOptions={{
@@ -28,21 +32,42 @@ const MainAppBottomTabs = () => {
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home" color={color} size={size} />
           ),
-          title:t("HOME")
+          title: t("HOME")
         }}
       />
-      <Tab.Screen name="Cart" component={CartScreen} options={{
+      
+      <Tab.Screen 
+        name="Wishlist" 
+        component={WishlistScreen}
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="heart" color={color} size={size} />
+          ),
+          title: "WISHLIST"
+        }}
+      />
+      
+      <Tab.Screen 
+        name="Cart" 
+        component={CartScreen} 
+        options={{
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="cart" color={color} size={size} />
           ),
-          title:t("CART")
-        }} />
-      <Tab.Screen name="Profile" component={ProfileScreen} options={{
+          title: t("CART")
+        }} 
+      />
+      
+      <Tab.Screen 
+        name="Profile" 
+        component={ProfileScreen} 
+        options={{
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="person" color={color} size={size} />
           ),
-          title:t("PROFILE")
-        }}/>
+          title: t("PROFILE")
+        }}
+      />
     </Tab.Navigator>
   );
 };
