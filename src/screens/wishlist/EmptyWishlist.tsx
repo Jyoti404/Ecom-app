@@ -3,7 +3,7 @@ import React from "react";
 import { colors } from "../../styles/colors";
 import { s, vs } from "react-native-size-matters";
 import { Ionicons } from "@expo/vector-icons";
-import AppButton from "../buttons/AppButton";
+import AppButton from "../../components/buttons/AppButton";
 import { useNavigation } from "@react-navigation/native";
 import { useTranslation } from "react-i18next";
 
