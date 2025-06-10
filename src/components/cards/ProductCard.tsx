@@ -16,6 +16,7 @@ import { commonStyles } from "../../styles/sharedStyles";
 
 type ProductCardProps = {
   onAddCartPress: () => void;
+  onWishlistPress: () => void;
   imageURL: string;
   title: string;
   price: number | string;
@@ -23,6 +24,7 @@ type ProductCardProps = {
 
 const ProductCard: React.FC<ProductCardProps> = ({
   onAddCartPress,
+  onWishlistPress,
   imageURL,
   title,
   price,
@@ -32,6 +34,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
       {/* Add to cart button */}
       <TouchableOpacity style={styles.addToCart} onPress={onAddCartPress}>
         <Ionicons name="cart" size={s(17)} color={colors.white} />
+      </TouchableOpacity>
+      {/* Wishlist button */}
+      <TouchableOpacity style={styles.wishlistButton} onPress={onWishlistPress}>
+        <Ionicons name="heart" size={s(17)} color={colors.white} />
       </TouchableOpacity>
       {/* image container */}
       <View style={styles.imageContainer}>
@@ -52,8 +58,6 @@ const styles = StyleSheet.create({
   container: {
     width: s(160),
     height: vs(190),
-    backgroundColor: colors.white,
-    borderRadius: s(10),
     ...commonStyles.shadow,
   },
   imageContainer: {
@@ -97,4 +101,17 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  wishlistButton: {  
+  width: s(26),
+  height: vs(26),
+  position: "absolute",
+  backgroundColor: colors.primary,
+  borderRadius: s(13),
+  right: s(5), 
+  top: s(5),
+  zIndex: 1,
+  justifyContent: "center",
+  alignItems: "center",
+}
+
 });
