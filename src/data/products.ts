@@ -2,9 +2,9 @@ export const products = [
   {
     id: 1,
     price: 1199,
-    title: "iPhone 16 Pro Max",
+    title: "Mens Tshirt (Gildan Softstyle)",
     imageURL:
-      "https://2b.com.eg/media/catalog/product/cache/661473ab953cdcdf4c3b607144109b90/m/a/ma658.jpg",
+      "https://www.qualitylogoproducts.com/custom-tshirts/gildan-softstyle-t-shirt-white-hq.jpg",
   },
   {
     id: 2,
