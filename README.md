@@ -55,8 +55,8 @@ npx expo start
 ![screenshot3](./screenshots/i.jpg)
 
 ![screenshot4](./screenshots/j.jpg)
-![screenshot4](./screenshots/p1.jpg)
-![screenshot4](./screenshots/p2.jpg)
-![screenshot4](./screenshots/p3.jpg)
-![screenshot4](./screenshots/p4.jpg)
-![screenshot4](./screenshots/p5.jpg)
+![screenshot4](./screenshots/p1.png)
+![screenshot4](./screenshots/p2.png)
+![screenshot4](./screenshots/p3.png)
+![screenshot4](./screenshots/p4.png)
+![screenshot4](./screenshots/p5.png)
