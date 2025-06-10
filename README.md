@@ -1,8 +1,8 @@
-Sri Shop App (Expo)
+# Sri Task App
 A mobile e-commerce app built with Expo and React Native.
 Features: Add to cart, user authentication, and language switching (supports 5 languages).
 
-🚀 Features
+🚀# Features
 🛒 Add to Cart functionality for products
 
 🌐 Language switcher (supports 5 languages)
@@ -17,7 +17,7 @@ Features: Add to cart, user authentication, and language switching (supports 5 l
 
 🏷️ No admin dashboard or admin controls
 
-🛠️ Setup & Installation
+🛠️ #Setup & Installation
 Prerequisites:
 
 Node.js ≥ 16
@@ -26,7 +26,7 @@ Expo CLI
 
 Firebase project (Firestore, Authentication)
 
-Steps:
+#Steps:
 
 Clone the repo:
 
