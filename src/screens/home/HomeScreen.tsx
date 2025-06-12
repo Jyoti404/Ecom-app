@@ -10,6 +10,8 @@ import { addItemToCart } from "../../store/reducers/cartSlice";
 import { getProductsData } from "../../config/dataServices";
 import { Ionicons } from "@expo/vector-icons"; // For the chatbot icon
 import { colors } from "../../styles/colors";
+import ChatbotScreen from "../screens/Home/ChatbotScreen"; // adjust path
+
 
 const HomeScreen = ({ navigation }) => {
   const dispatch = useDispatch();
@@ -27,6 +29,7 @@ const HomeScreen = ({ navigation }) => {
   return (
     <AppSafeAreaView>
       <HomeHeader />
+      
       <FlatList
         numColumns={2}
         data={products}

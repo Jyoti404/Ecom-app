@@ -46,7 +46,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       {/* detail container */}
       <View style={styles.detailscontainer}>
         <AppText style={styles.title}>{title}</AppText>
-        <AppText style={styles.price}>$ {price}</AppText>
+        <AppText style={styles.price}> {price}</AppText>
       </View>
     </View>
   );

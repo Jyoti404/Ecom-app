@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 import { colors } from "../styles/colors";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../config/firebase";
+import ChatbotScreen from "../screens/home/ChatbotScreen";
 
 const Stack = createStackNavigator();
 const MainAppStack = () => {
@@ -41,6 +42,7 @@ const MainAppStack = () => {
     >
       <Stack.Screen name="AuthStack" component={AuthStack} />
       <Stack.Screen name="MainAppBottomTabs" component={MainAppBottomTabs} />
+
       <Stack.Screen
         options={{ headerShown: true,title:t("CHECK_OUT") }}
         name="CheckOutScreen"
@@ -51,6 +53,12 @@ const MainAppStack = () => {
         name="MyOrdersScreen"
         component={MyOrdersScreen}
       />
+      <Stack.Screen
+  name="Chatbot"
+  component={ChatbotScreen}
+  options={{ headerShown: true, title: "Support Chat" }}
+/>
+
     </Stack.Navigator>
   );
 };
