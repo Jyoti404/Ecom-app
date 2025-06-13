@@ -25,7 +25,7 @@ const CartItem :FC< CartItemProps>= ({title,price,imageURL,qty,onPressIncrease,o
       </View>
       <View style={styles.detailsContainer}>
         <AppText style={styles.title}>{title}</AppText>
-        <AppText style={styles.price}>$ {price}</AppText>
+        <AppText style={styles.price}>{price}</AppText>
         <View style={styles.QtyConatiner}>
           <TouchableOpacity style={styles.iconButton} onPress={onPressIncrease}>
             <FontAwesome name="plus" size={s(14)} color={colors.primary} />

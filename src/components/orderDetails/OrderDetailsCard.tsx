@@ -20,10 +20,10 @@ const OrderDetailsCard : FC<OrderDetailsCardProps>= ({ date,totalAmout,totalPric
       <View style={styles.saparator} />
       <View style={styles.details}>
         <AppText variant="medium" style={styles.totalPrice}>
-          {t("TOTAL_PRICE")}: $ {totalPrice}
+          {t("TOTAL_PRICE")}:  {totalPrice}
         </AppText>
         <AppText variant="medium" style={styles.amount}>
-          $ {totalAmout}
+           {totalAmout}
         </AppText>
       </View>
       <View style={styles.details}>

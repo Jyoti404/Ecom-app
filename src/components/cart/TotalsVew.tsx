@@ -15,23 +15,23 @@ const TotalsVew: FC<TotalsViewProps> = ({itemPrice,orderTotal}) => {
     <View style={styles.conatainer}>
       <View style={styles.row}>
         <AppText style={styles.textTitle}>{t("ITEM_PRICE")}:</AppText>
-        <AppText style={styles.textPrice}>$ {itemPrice}</AppText>
+        <AppText style={styles.textPrice}> {itemPrice}</AppText>
 
       </View>
       <View style={styles.row}>
       <AppText style={styles.textTitle}>{t("TAXES")}:</AppText>
-        <AppText style={styles.textPrice}>$ {taxes}</AppText>
+        <AppText style={styles.textPrice}> {taxes}</AppText>
 
       </View>
       <View style={styles.row}>
       <AppText style={styles.textTitle}>{t("SHIPPING_FEE")}:</AppText>
-        <AppText style={styles.textPrice}>$ {shippingFee}</AppText>
+        <AppText style={styles.textPrice}> {shippingFee}</AppText>
 
       </View>
       <View style={styles.saprator}/>
       <View style={styles.row}>
       <AppText style={styles.textTitle}>{t("ORDER_TOTAL")}:</AppText>
-        <AppText style={styles.textPrice}>$ {orderTotal}</AppText>
+        <AppText style={styles.textPrice}> {orderTotal}</AppText>
 
       </View>
     </View>
